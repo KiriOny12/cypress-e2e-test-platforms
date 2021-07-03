@@ -3,4 +3,5 @@ node_modules
 .idea
 cypress/videos
 cypress/fixtures/users.json
+cypress/fixtures/wls.json
 cypress/screenshots
