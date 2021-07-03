@@ -1,0 +1,19 @@
+{
+  "env": {
+    "cypress-plugin-snapshots": {
+      "imageConfig": {
+        "threshold": 1,
+        "thresholdType": "percent"
+      }
+    }
+  },
+  "retries": 2,
+  "responseTimeout":  120000,
+  "video": true,
+  "ignoreTestFiles": [
+    "**/examples/*",
+    "**/__snapshots__/*",
+    "**/__image_snapshots__/*"
+  ],
+  "testFiles": "**/features/**"
+}

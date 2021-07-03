@@ -1,0 +1,29 @@
+{
+  "name": "platform_e2e_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run:links": "./node_modules/.bin/cypress-tags run -e TAGS=\"@links\" --browser chrome",
+    "cy:run:functions": "./node_modules/.bin/cypress-tags run -e TAGS=\"@functions\" --browser chrome",
+    "cy:run:trade": "./node_modules/.bin/cypress-tags run -e TAGS=\"@trade\" --browser chrome",
+    "cy:run:clear": "./node_modules/.bin/cypress-tags run -e TAGS=\"@clear\" --browser chrome",
+    "cy:run:gui": "./node_modules/.bin/cypress-tags run -e TAGS=\"@gui\" --browser chrome",
+    "cy:run:smoke": "./node_modules/.bin/cypress-tags run -e TAGS=\"@smoke\" --browser chrome"
+  },
+  "author": "Olha Maiesh",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.4.0",
+    "cy-view": "^1.0.9",
+    "cypress": "^7.3.0",
+    "cypress-cucumber-preprocessor": "^4.0.1"
+  },
+  "dependencies": {
+    "cypress-plugin-snapshots": "^1.4.4",
+    "del": "^6.0.0",
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5"
+  }
+}
