@@ -2,8 +2,8 @@ Feature: Clear open positions
 
 
   Background: Go to account page as authorization user
-    Given account advanced page newcfds
-    Then log in to the newcfds
+    Given account advanced page octa
+    Then log in to the octa
     Then check you are authorization on real
 
 
